@@ -21,8 +21,8 @@ public class Gracz {
         return GraczImie;
     }
 
-    public Figura getFig() {
-        return fig;
+    public String getFig() {
+        return fig.getName();
     }
     public void ruch(){
         System.out.println(this.getGraczImie()+" ruch:");
