@@ -76,16 +76,31 @@ public class Prompter {
 
     private boolean wygrana() {
         boolean flag = true;
-        if (a1.get(0) == a1.get(1) && a1.get(1) == a1.get(2))
+        if (a1.get(0) == a1.get(1) && a1.get(1) == a1.get(2)){
+            return true;}
+            else if (plansza.get(0).get(0)==plansza.get(0).get(0)&&plansza.get(0).get(0)==plansza.get(0).get(0))
             return true;
-//        else if (flag) {
-//            for (ArrayList a : plansza) {
-//                for (String a1 : a1) {
-//                    if(a1.get)
-//                }
-//
-//            }
-        else
+        else if (plansza.get(0).get(1)==plansza.get(0).get(1)&&plansza.get(0).get(1)==plansza.get(0).get(1))
+            return true;
+        else if (plansza.get(0).get(2)==plansza.get(0).get(2)&&plansza.get(0).get(2)==plansza.get(0).get(2))
+            return true;
+        else if (plansza.get(1).get(0)==plansza.get(1).get(0)&&plansza.get(1).get(0)==plansza.get(1).get(0))
+            return true;
+        else if (plansza.get(1).get(1)==plansza.get(1).get(1)&&plansza.get(1).get(1)==plansza.get(1).get(1))
+            return true;
+        else if (plansza.get(1).get(2)==plansza.get(1).get(2)&&plansza.get(1).get(2)==plansza.get(1).get(2))
+            return true;
+        else if (plansza.get(2).get(0)==plansza.get(2).get(0)&&plansza.get(2).get(0)==plansza.get(2).get(0))
+            return true;
+        else if (plansza.get(2).get(1)==plansza.get(2).get(1)&&plansza.get(2).get(1)==plansza.get(2).get(1))
+            return true;
+        else if (plansza.get(2).get(2)==plansza.get(2).get(2)&&plansza.get(2).get(2)==plansza.get(2).get(2))
+            return true;
+        else if (plansza.get(0).get(0)==plansza.get(1).get(1)&&plansza.get(1).get(1)==plansza.get(2).get(2))
+            return true;
+        else if (plansza.get(0).get(2)==plansza.get(1).get(1)&&plansza.get(2).get(2)==plansza.get(2).get(0))
+            return true;
+            else
             return false;
         }
     }
