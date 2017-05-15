@@ -62,6 +62,7 @@ public class Prompter {
 
             if (wygrana()) {
                 flaga = false;
+                System.out.println("Koniec gry");
             }
 
         } while (flaga);
@@ -72,38 +73,39 @@ public class Prompter {
     private void uaktualnijPlansze(Gracz p, int i, int w) {
         a1.set(i - 1, p.getZnak());
         plansza.set(w - 1, a1);
+        System.out.println(plansza);
     }
 
     private boolean wygrana() {
         boolean flag = true;
-        if (a1.get(0) == a1.get(1) && a1.get(1) == a1.get(2)){
-            return true;}
-            else if (plansza.get(0).get(0)==plansza.get(0).get(0)&&plansza.get(0).get(0)==plansza.get(0).get(0))
+        if (a1.get(0) == a1.get(1) && a1.get(1) == a1.get(2))
             return true;
-        else if (plansza.get(0).get(1)==plansza.get(0).get(1)&&plansza.get(0).get(1)==plansza.get(0).get(1))
+        else if (plansza.get(0).get(0) == plansza.get(0).get(0) && plansza.get(0).get(0) == plansza.get(0).get(0))
             return true;
-        else if (plansza.get(0).get(2)==plansza.get(0).get(2)&&plansza.get(0).get(2)==plansza.get(0).get(2))
+        else if (plansza.get(0).get(1) == plansza.get(0).get(1) && plansza.get(0).get(1) == plansza.get(0).get(1))
             return true;
-        else if (plansza.get(1).get(0)==plansza.get(1).get(0)&&plansza.get(1).get(0)==plansza.get(1).get(0))
+        else if (plansza.get(0).get(2) == plansza.get(0).get(2) && plansza.get(0).get(2) == plansza.get(0).get(2))
             return true;
-        else if (plansza.get(1).get(1)==plansza.get(1).get(1)&&plansza.get(1).get(1)==plansza.get(1).get(1))
+        else if (plansza.get(1).get(0) == plansza.get(1).get(0) && plansza.get(1).get(0) == plansza.get(1).get(0))
             return true;
-        else if (plansza.get(1).get(2)==plansza.get(1).get(2)&&plansza.get(1).get(2)==plansza.get(1).get(2))
+        else if (plansza.get(1).get(1) == plansza.get(1).get(1) && plansza.get(1).get(1) == plansza.get(1).get(1))
             return true;
-        else if (plansza.get(2).get(0)==plansza.get(2).get(0)&&plansza.get(2).get(0)==plansza.get(2).get(0))
+        else if (plansza.get(1).get(2) == plansza.get(1).get(2) && plansza.get(1).get(2) == plansza.get(1).get(2))
             return true;
-        else if (plansza.get(2).get(1)==plansza.get(2).get(1)&&plansza.get(2).get(1)==plansza.get(2).get(1))
+        else if (plansza.get(2).get(0) == plansza.get(2).get(0) && plansza.get(2).get(0) == plansza.get(2).get(0))
             return true;
-        else if (plansza.get(2).get(2)==plansza.get(2).get(2)&&plansza.get(2).get(2)==plansza.get(2).get(2))
+        else if (plansza.get(2).get(1) == plansza.get(2).get(1) && plansza.get(2).get(1) == plansza.get(2).get(1))
             return true;
-        else if (plansza.get(0).get(0)==plansza.get(1).get(1)&&plansza.get(1).get(1)==plansza.get(2).get(2))
+        else if (plansza.get(2).get(2) == plansza.get(2).get(2) && plansza.get(2).get(2) == plansza.get(2).get(2))
             return true;
-        else if (plansza.get(0).get(2)==plansza.get(1).get(1)&&plansza.get(2).get(2)==plansza.get(2).get(0))
+        else if (plansza.get(0).get(0) == plansza.get(1).get(1) && plansza.get(1).get(1) == plansza.get(2).get(2))
             return true;
-            else
+        else if (plansza.get(0).get(2) == plansza.get(1).get(1) && plansza.get(2).get(2) == plansza.get(2).get(0))
+            return true;
+        else
             return false;
-        }
     }
+}
 
 
 
