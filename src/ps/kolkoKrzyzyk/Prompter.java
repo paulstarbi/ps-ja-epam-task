@@ -46,7 +46,9 @@ public class Prompter {
             a.add(i, a1);
         }
 
-        System.out.println(a);
+        for (ArrayList as:a) {
+            System.out.println(as);
+        }
 
         return this.plansza = a;
     }
@@ -73,7 +75,9 @@ public class Prompter {
     private void uaktualnijPlansze(Gracz p, int i, int w) {
         a1.set(i - 1, p.getZnak());
         plansza.set(w - 1, a1);
-        System.out.println(plansza);
+        for (ArrayList as:plansza) {
+            System.out.println(as);
+        }
     }
 
     private boolean wygrana() {
@@ -105,6 +109,7 @@ public class Prompter {
         else
             return false;
     }
+
 }
 
 
